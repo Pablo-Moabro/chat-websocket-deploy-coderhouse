@@ -1,0 +1,16 @@
+<h1>Chat Online - WebSocket</h1>
+
+<div>
+    <div>
+        <input type="text" id="chat-text" placeholder="Escribe tu mensaje">
+    </div>
+    <div>
+        <h3>Mensajes</h3>
+        <ul id="message-log"></ul>
+    </div>
+</div>
+
+{{!-- El script de socket.io debe estar antes que chat.js --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/api/public/js/chat.socket.js"></script>
